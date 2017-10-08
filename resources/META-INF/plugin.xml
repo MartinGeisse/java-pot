@@ -19,7 +19,7 @@
   <extensions defaultExtensionNs="com.intellij">
     <fileTypeFactory implementation="name.martingeisse.javapot.ide.PotFileTypeFactory" />
     <lang.syntaxHighlighterFactory language="JAVAPOT" implementationClass="name.martingeisse.javapot.ide.PotSyntaxHighlighterFactory" />
-    <!-- <lang.parserDefinition language="VERILOG" implementationClass="name.martingeisse.testplugin.parser.VerilogParserDefinition" /> -->
+    <lang.parserDefinition language="JAVAPOT" implementationClass="name.martingeisse.javapot.ide.PotParserDefinition" />
   </extensions>
 
 </idea-plugin>
