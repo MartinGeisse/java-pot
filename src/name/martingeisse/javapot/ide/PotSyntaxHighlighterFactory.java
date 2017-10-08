@@ -59,6 +59,8 @@ public class PotSyntaxHighlighterFactory extends SyntaxHighlighterFactory {
 						return PotTextAttributeKeys.KEYWORD;
 					} else if (tokenType == PotSpecificationElementTypes.PERCENT_PREC) {
 						return PotTextAttributeKeys.KEYWORD;
+					} else if (tokenType == PotSpecificationElementTypes.START) {
+						return PotTextAttributeKeys.KEYWORD;
 					} else if (tokenType == PotSpecificationElementTypes.DOT) {
 						return PotTextAttributeKeys.DOT;
 					} else if (tokenType == PotSpecificationElementTypes.COMMA) {
