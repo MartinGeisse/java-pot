@@ -1,1 +1,1 @@
-java -jar ../../lib/java-cup-11b.jar -symbols Tokens -parser Parser -interface  grammar.cup
+java -jar ../../lib/java-cup-11b.jar -symbols CupGeneratedPotTokenCodes -parser CupGeneratedPotParser -interface  grammar.cup
