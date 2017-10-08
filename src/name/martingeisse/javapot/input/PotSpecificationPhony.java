@@ -7,9 +7,9 @@ import org.jetbrains.annotations.NotNull;
 /**
  *
  */
-public final class PotSpecificationToken extends IElementType  {
+public final class PotSpecificationPhony extends IElementType  {
 
-	public PotSpecificationToken(@NotNull String debugName) {
+	public PotSpecificationPhony(@NotNull String debugName) {
 		super(debugName, PotSpecificationLanguage.INSTANCE);
 	}
 

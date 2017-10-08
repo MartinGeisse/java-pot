@@ -1,9 +1,6 @@
-package name.martingeisse.javapot.input;
+package name.martingeisse.javapot.samples.expression;
 
 import java.lang.Error;
-import com.intellij.lexer.FlexLexer;
-import com.intellij.psi.TokenType;
-import com.intellij.psi.tree.IElementType;
 
 %%
 
@@ -32,7 +29,7 @@ ident = ([:jletter:] | "_" ) ([:jletterdigit:] | [:jletter:] | "_" )*
 %%
 
 <YYINITIAL> {
-	{Whitespace} { return TokenType.WHITE_SPACE; }
+	{Whitespace} { return TokenType.WHITESPACE}
 	"?" { return PotSpecificationElementTypes.QUESTION_MARK; }
 	";" { return PotSpecificationElementTypes.SEMICOLON; }
 	"," { return PotSpecificationElementTypes.COMMA; }
@@ -43,7 +40,7 @@ ident = ([:jletter:] | "_" ) ([:jletterdigit:] | [:jletter:] | "_" )*
 	":" { return PotSpecificationElementTypes.COLON; }
 	"::=" { return PotSpecificationElementTypes.COLON_COLON_EQUALS; }
 	"%prec" { return PotSpecificationElementTypes.PERCENT_PREC; }
-	{Comment} { return PotSpecificationElementTypes.COMMENT; }
+	{Comment} { }
 	"package" { return PotSpecificationElementTypes.PACKAGE; }
 	"class" { return PotSpecificationElementTypes.CLASS; }
 	"terminal" { return PotSpecificationElementTypes.TERMINAL; }

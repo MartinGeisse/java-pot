@@ -1,0 +1,20 @@
+
+package name.martingeisse.javapot.samples.expression;
+class ExpressionParser;
+
+terminal NUMBER, PLUS, MINUS, TIMES, DIVIDED_BY, OPENING_PARENTHESIS, CLOSING_PARENTHESIS;
+nonterminal expression;
+
+precedence left PLUS, MINUS;
+precedence left TIMES, DIVIDED_BY;
+
+start with expression;
+
+expression ::=
+	NUMBER
+	| expression PLUS expression
+	| expression MINUS expression
+	| expression TIMES expression
+	| expression DIVIDED_BY expression
+	| OPENING_PARENTHESIS expression CLOSING_PARENTHESIS
+	;

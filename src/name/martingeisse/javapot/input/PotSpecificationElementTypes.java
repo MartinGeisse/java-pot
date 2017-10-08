@@ -5,6 +5,8 @@ package name.martingeisse.javapot.input;
  */
 public final class PotSpecificationElementTypes {
 
+	public static final PotSpecificationPhony COMMENT = new PotSpecificationPhony("COMMENT");
+
 	public static final PotSpecificationToken QUESTION_MARK = new PotSpecificationToken("QUESTION_MARK");
 	public static final PotSpecificationToken SEMICOLON = new PotSpecificationToken("SEMICOLON");
 	public static final PotSpecificationToken COMMA = new PotSpecificationToken("COMMA");

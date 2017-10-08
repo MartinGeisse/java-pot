@@ -13,7 +13,7 @@ import com.intellij.psi.tree.IElementType;
  * <a href="http://www.jflex.de/">JFlex</a> 1.7.0-SNAPSHOT
  * from the specification file <tt>lexer.flex</tt>
  */
-public class Lexer implements FlexLexer {
+public class FlexGeneratedPotLexer implements FlexLexer {
 
   /** This character denotes the end of file */
   public static final int YYEOF = -1;
@@ -167,12 +167,12 @@ public class Lexer implements FlexLexer {
   private static final String ZZ_ACTION_PACKED_0 =
     "\1\0\1\1\2\2\1\1\1\3\1\4\1\5\1\6"+
     "\1\7\1\10\1\11\1\12\1\13\1\1\7\4\4\0"+
-    "\10\4\1\0\1\14\1\0\10\4\1\0\4\4\1\15"+
-    "\4\4\1\16\2\4\1\17\1\20\1\21\11\4\1\22"+
-    "\4\4\1\23\1\24\3\4\1\25\1\4\1\26";
+    "\10\4\2\14\1\0\1\15\1\0\10\4\1\0\4\4"+
+    "\1\16\4\4\1\17\2\4\1\20\1\21\1\22\11\4"+
+    "\1\23\4\4\1\24\1\25\3\4\1\26\1\4\1\27";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[83];
+    int [] result = new int[85];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -201,16 +201,16 @@ public class Lexer implements FlexLexer {
     "\0\42\0\42\0\42\0\42\0\42\0\252\0\314\0\356"+
     "\0\u0110\0\u0132\0\u0154\0\u0176\0\u0198\0\u01ba\0\u01dc\0\u01fe"+
     "\0\u0220\0\u0242\0\u0264\0\u0286\0\u02a8\0\u02ca\0\u02ec\0\u030e"+
-    "\0\u0330\0\u0352\0\u0374\0\42\0\u0396\0\u03b8\0\u03da\0\u03fc"+
-    "\0\u041e\0\u0440\0\u0462\0\u0484\0\u04a6\0\u04c8\0\u04ea\0\u050c"+
-    "\0\u052e\0\u0550\0\210\0\u0572\0\u0594\0\u05b6\0\u05d8\0\42"+
-    "\0\u05fa\0\u061c\0\210\0\210\0\210\0\u063e\0\u0660\0\u0682"+
-    "\0\u06a4\0\u06c6\0\u06e8\0\u070a\0\u072c\0\u074e\0\210\0\u0770"+
-    "\0\u0792\0\u07b4\0\u07d6\0\210\0\210\0\u07f8\0\u081a\0\u083c"+
-    "\0\210\0\u085e\0\210";
+    "\0\u0330\0\u0352\0\u0374\0\42\0\u0396\0\42\0\u03b8\0\u03da"+
+    "\0\u03fc\0\u041e\0\u0440\0\u0462\0\u0484\0\u04a6\0\u04c8\0\u04ea"+
+    "\0\u050c\0\u052e\0\u0550\0\u0572\0\210\0\u0594\0\u05b6\0\u05d8"+
+    "\0\u05fa\0\42\0\u061c\0\u063e\0\210\0\210\0\210\0\u0660"+
+    "\0\u0682\0\u06a4\0\u06c6\0\u06e8\0\u070a\0\u072c\0\u074e\0\u0770"+
+    "\0\210\0\u0792\0\u07b4\0\u07d6\0\u07f8\0\210\0\210\0\u081a"+
+    "\0\u083c\0\u085e\0\210\0\u0880\0\210";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[83];
+    int [] result = new int[85];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -243,45 +243,45 @@ public class Lexer implements FlexLexer {
     "\11\0\7\7\1\36\11\7\6\0\2\7\11\0\2\7"+
     "\1\37\16\7\6\0\2\7\11\0\11\7\1\40\7\7"+
     "\6\0\2\7\11\0\2\7\1\41\16\7\6\0\2\7"+
-    "\11\0\15\7\1\42\3\7\1\27\1\3\1\4\37\27"+
-    "\5\30\1\43\34\30\17\0\1\44\44\0\1\45\25\0"+
-    "\2\7\11\0\2\7\1\46\16\7\6\0\2\7\11\0"+
-    "\3\7\1\47\15\7\6\0\2\7\11\0\6\7\1\50"+
-    "\12\7\6\0\2\7\11\0\4\7\1\51\14\7\6\0"+
-    "\2\7\11\0\17\7\1\52\1\7\6\0\2\7\11\0"+
-    "\4\7\1\53\14\7\6\0\2\7\11\0\1\7\1\54"+
-    "\17\7\6\0\2\7\11\0\14\7\1\55\4\7\4\30"+
-    "\1\4\1\43\34\30\23\0\1\56\24\0\2\7\11\0"+
-    "\3\7\1\57\15\7\6\0\2\7\11\0\5\7\1\60"+
-    "\13\7\6\0\2\7\11\0\20\7\1\61\6\0\2\7"+
-    "\11\0\10\7\1\62\10\7\6\0\2\7\11\0\11\7"+
-    "\1\63\7\7\6\0\2\7\11\0\1\7\1\64\17\7"+
-    "\6\0\2\7\11\0\12\7\1\65\6\7\6\0\2\7"+
-    "\11\0\4\7\1\66\4\7\1\67\7\7\24\0\1\70"+
-    "\23\0\2\7\11\0\2\7\1\71\16\7\6\0\2\7"+
-    "\11\0\4\7\1\72\14\7\6\0\2\7\11\0\11\7"+
-    "\1\73\7\7\6\0\2\7\11\0\10\7\1\74\10\7"+
-    "\6\0\2\7\11\0\11\7\1\75\7\7\6\0\2\7"+
-    "\11\0\13\7\1\76\5\7\6\0\2\7\11\0\10\7"+
-    "\1\77\10\7\6\0\2\7\11\0\2\7\1\100\16\7"+
-    "\6\0\2\7\11\0\16\7\1\101\2\7\6\0\2\7"+
-    "\11\0\6\7\1\102\12\7\6\0\2\7\11\0\14\7"+
-    "\1\103\4\7\6\0\2\7\11\0\10\7\1\104\10\7"+
-    "\6\0\2\7\11\0\1\7\1\105\17\7\6\0\2\7"+
-    "\11\0\2\7\1\106\16\7\6\0\2\7\11\0\2\7"+
-    "\1\107\16\7\6\0\2\7\11\0\4\7\1\110\14\7"+
-    "\6\0\2\7\11\0\15\7\1\111\3\7\6\0\2\7"+
-    "\11\0\12\7\1\112\6\7\6\0\2\7\11\0\14\7"+
-    "\1\113\4\7\6\0\2\7\11\0\7\7\1\114\11\7"+
-    "\6\0\2\7\11\0\3\7\1\115\15\7\6\0\2\7"+
-    "\11\0\13\7\1\116\5\7\6\0\2\7\11\0\3\7"+
-    "\1\117\15\7\6\0\2\7\11\0\14\7\1\120\4\7"+
-    "\6\0\2\7\11\0\2\7\1\121\16\7\6\0\2\7"+
-    "\11\0\4\7\1\122\14\7\6\0\2\7\11\0\7\7"+
-    "\1\123\11\7";
+    "\11\0\15\7\1\42\3\7\1\27\1\43\1\44\37\27"+
+    "\5\30\1\45\34\30\17\0\1\46\44\0\1\47\25\0"+
+    "\2\7\11\0\2\7\1\50\16\7\6\0\2\7\11\0"+
+    "\3\7\1\51\15\7\6\0\2\7\11\0\6\7\1\52"+
+    "\12\7\6\0\2\7\11\0\4\7\1\53\14\7\6\0"+
+    "\2\7\11\0\17\7\1\54\1\7\6\0\2\7\11\0"+
+    "\4\7\1\55\14\7\6\0\2\7\11\0\1\7\1\56"+
+    "\17\7\6\0\2\7\11\0\14\7\1\57\4\7\2\0"+
+    "\1\44\37\0\4\30\1\44\1\45\34\30\23\0\1\60"+
+    "\24\0\2\7\11\0\3\7\1\61\15\7\6\0\2\7"+
+    "\11\0\5\7\1\62\13\7\6\0\2\7\11\0\20\7"+
+    "\1\63\6\0\2\7\11\0\10\7\1\64\10\7\6\0"+
+    "\2\7\11\0\11\7\1\65\7\7\6\0\2\7\11\0"+
+    "\1\7\1\66\17\7\6\0\2\7\11\0\12\7\1\67"+
+    "\6\7\6\0\2\7\11\0\4\7\1\70\4\7\1\71"+
+    "\7\7\24\0\1\72\23\0\2\7\11\0\2\7\1\73"+
+    "\16\7\6\0\2\7\11\0\4\7\1\74\14\7\6\0"+
+    "\2\7\11\0\11\7\1\75\7\7\6\0\2\7\11\0"+
+    "\10\7\1\76\10\7\6\0\2\7\11\0\11\7\1\77"+
+    "\7\7\6\0\2\7\11\0\13\7\1\100\5\7\6\0"+
+    "\2\7\11\0\10\7\1\101\10\7\6\0\2\7\11\0"+
+    "\2\7\1\102\16\7\6\0\2\7\11\0\16\7\1\103"+
+    "\2\7\6\0\2\7\11\0\6\7\1\104\12\7\6\0"+
+    "\2\7\11\0\14\7\1\105\4\7\6\0\2\7\11\0"+
+    "\10\7\1\106\10\7\6\0\2\7\11\0\1\7\1\107"+
+    "\17\7\6\0\2\7\11\0\2\7\1\110\16\7\6\0"+
+    "\2\7\11\0\2\7\1\111\16\7\6\0\2\7\11\0"+
+    "\4\7\1\112\14\7\6\0\2\7\11\0\15\7\1\113"+
+    "\3\7\6\0\2\7\11\0\12\7\1\114\6\7\6\0"+
+    "\2\7\11\0\14\7\1\115\4\7\6\0\2\7\11\0"+
+    "\7\7\1\116\11\7\6\0\2\7\11\0\3\7\1\117"+
+    "\15\7\6\0\2\7\11\0\13\7\1\120\5\7\6\0"+
+    "\2\7\11\0\3\7\1\121\15\7\6\0\2\7\11\0"+
+    "\14\7\1\122\4\7\6\0\2\7\11\0\2\7\1\123"+
+    "\16\7\6\0\2\7\11\0\4\7\1\124\14\7\6\0"+
+    "\2\7\11\0\7\7\1\125\11\7";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[2176];
+    int [] result = new int[2210];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -320,11 +320,11 @@ public class Lexer implements FlexLexer {
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
     "\1\0\1\11\1\1\1\11\1\1\1\11\1\1\6\11"+
-    "\11\1\4\0\10\1\1\0\1\11\1\0\10\1\1\0"+
-    "\11\1\1\11\33\1";
+    "\11\1\4\0\11\1\1\11\1\0\1\11\1\0\10\1"+
+    "\1\0\11\1\1\11\33\1";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[83];
+    int [] result = new int[85];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -385,7 +385,7 @@ public class Lexer implements FlexLexer {
    *
    * @param   in  the java.io.Reader to read input from.
    */
-  public Lexer(java.io.Reader in) {
+  public FlexGeneratedPotLexer(java.io.Reader in) {
     this.zzReader = in;
   }
 
@@ -640,91 +640,95 @@ public class Lexer implements FlexLexer {
           case 1: 
             { return TokenType.BAD_CHARACTER;
             }
-          case 23: break;
-          case 2: 
-            { 
-            }
           case 24: break;
+          case 2: 
+            { return TokenType.WHITE_SPACE;
+            }
+          case 25: break;
           case 3: 
             { return PotSpecificationElementTypes.ASTERISK;
             }
-          case 25: break;
+          case 26: break;
           case 4: 
             { return PotSpecificationElementTypes.IDENTIFIER;
             }
-          case 26: break;
+          case 27: break;
           case 5: 
             { return PotSpecificationElementTypes.QUESTION_MARK;
             }
-          case 27: break;
+          case 28: break;
           case 6: 
             { return PotSpecificationElementTypes.SEMICOLON;
             }
-          case 28: break;
+          case 29: break;
           case 7: 
             { return PotSpecificationElementTypes.COMMA;
             }
-          case 29: break;
+          case 30: break;
           case 8: 
             { return PotSpecificationElementTypes.DOT;
             }
-          case 30: break;
+          case 31: break;
           case 9: 
             { return PotSpecificationElementTypes.BAR;
             }
-          case 31: break;
+          case 32: break;
           case 10: 
             { return PotSpecificationElementTypes.PLUS;
             }
-          case 32: break;
+          case 33: break;
           case 11: 
             { return PotSpecificationElementTypes.COLON;
             }
-          case 33: break;
-          case 12: 
-            { return PotSpecificationElementTypes.COLON_COLON_EQUALS;
-            }
           case 34: break;
-          case 13: 
-            { return PotSpecificationElementTypes.LEFT;
+          case 12: 
+            { return PotSpecificationElementTypes.COMMENT;
             }
           case 35: break;
-          case 14: 
-            { return PotSpecificationElementTypes.PERCENT_PREC;
+          case 13: 
+            { return PotSpecificationElementTypes.COLON_COLON_EQUALS;
             }
           case 36: break;
-          case 15: 
-            { return PotSpecificationElementTypes.RIGHT;
+          case 14: 
+            { return PotSpecificationElementTypes.LEFT;
             }
           case 37: break;
-          case 16: 
-            { return PotSpecificationElementTypes.CLASS;
+          case 15: 
+            { return PotSpecificationElementTypes.PERCENT_PREC;
             }
           case 38: break;
-          case 17: 
-            { return PotSpecificationElementTypes.START;
+          case 16: 
+            { return PotSpecificationElementTypes.RIGHT;
             }
           case 39: break;
-          case 18: 
-            { return PotSpecificationElementTypes.PACKAGE;
+          case 17: 
+            { return PotSpecificationElementTypes.CLASS;
             }
           case 40: break;
-          case 19: 
-            { return PotSpecificationElementTypes.TERMINAL;
+          case 18: 
+            { return PotSpecificationElementTypes.START;
             }
           case 41: break;
-          case 20: 
-            { return PotSpecificationElementTypes.NONASSOC;
+          case 19: 
+            { return PotSpecificationElementTypes.PACKAGE;
             }
           case 42: break;
-          case 21: 
-            { return PotSpecificationElementTypes.PRECEDENCE;
+          case 20: 
+            { return PotSpecificationElementTypes.TERMINAL;
             }
           case 43: break;
-          case 22: 
-            { return PotSpecificationElementTypes.NONTERMINAL;
+          case 21: 
+            { return PotSpecificationElementTypes.NONASSOC;
             }
           case 44: break;
+          case 22: 
+            { return PotSpecificationElementTypes.PRECEDENCE;
+            }
+          case 45: break;
+          case 23: 
+            { return PotSpecificationElementTypes.NONTERMINAL;
+            }
+          case 46: break;
           default:
             zzScanError(ZZ_NO_MATCH);
           }

@@ -1,4 +1,4 @@
-package name.martingeisse.javapot.input;
+package name.martingeisse.javapot.ide;
 
 import com.intellij.lang.Language;
 import org.jetbrains.annotations.NotNull;
