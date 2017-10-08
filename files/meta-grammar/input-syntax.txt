@@ -1,0 +1,8 @@
+
+package aaa.bbb.ccc;
+// keine imports -- sollte automatisch passieren
+class MyParser;
+(terminals and nonterminals)
+(precedence list)
+start with my_start_nonterminal;
+(productions)
