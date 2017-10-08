@@ -7,10 +7,10 @@ import org.jetbrains.annotations.NotNull;
 /**
  *
  */
-public final class PotSpecificationPhony extends PotSpecificationSymbol  {
+public class PotSpecificationSymbol extends IElementType {
 
-	public PotSpecificationPhony(@NotNull String debugName) {
-		super(debugName);
+	public PotSpecificationSymbol(@NotNull String debugName) {
+		super(debugName, PotSpecificationLanguage.INSTANCE);
 	}
 
 }
